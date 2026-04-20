@@ -1,0 +1,19 @@
+{
+  "name": "playwright-ui-automation-parabank",
+  "version": "1.0.0",
+  "description": "E2E UI test automation for Parabank using Playwright and TypeScript",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:login": "npx playwright test tests/login",
+    "test:accounts": "npx playwright test tests/accounts",
+    "test:transfer": "npx playwright test tests/transfer",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
